@@ -4,7 +4,7 @@ import gameSeeds from './gameSeeds.js';
 
 const game = new Game();
 const displayGame = new DisplayGame();
-game.init(gameSeeds.one());
+game.init(gameSeeds.random(0, 0, 15, 25));
 
 setInterval(() => {
   game.tick();

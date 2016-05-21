@@ -40,7 +40,7 @@ export default {
     ];
     return getSeedArray(mySeed);
   },
-  two: () => {
+  babblingBrook: () => {
     const mySeed = [
       { s: '.......O........' },
       { s: '.....OOO....OO..' },
@@ -53,6 +53,18 @@ export default {
       { s: '..OO....OOO.....' },
       { s: '........O.......' },
     ];
+    return getSeedArray(mySeed);
+  },
+  random: (fromx, fromy, tox, toy) => {
+    const mySeed = [];
+    for (let i = fromx; i < tox; i++) {
+      let s = '';
+      for (let j = fromy; j < toy; j++) {
+        if (Math.random() < 0.5) s += 'O';
+        else s += '.';
+      }
+      mySeed.push({ s });
+    }
     return getSeedArray(mySeed);
   },
 };
