@@ -4,7 +4,8 @@
   "description": "conway's game of life",
   "main": "app.js",
   "scripts": {
-    "start": "babel-node src/app.js",
+    "start": "nodemon --watch src --exec \"npm run build && node\" build/app.js",
+    "build": "babel src -d build --source-maps",
     "test": "mocha --compilers js:babel-core/register --watch",
     "lint": "eslint --cache src/**/*.js"
   },
