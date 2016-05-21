@@ -1,0 +1,45 @@
+{
+  "name": "gameoflife",
+  "version": "0.0.0",
+  "description": "conway's game of life",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node src/app.js",
+    "test": "mocha --compilers js:babel-core/register --watch "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor-grubic/gameoflife.git"
+  },
+  "keywords": [
+    "conway",
+    "game",
+    "of",
+    "life",
+    "tdd",
+    "infinite",
+    "react"
+  ],
+  "author": "igor grubic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igor-grubic/gameoflife/issues"
+  },
+  "homepage": "https://github.com/igor-grubic/gameoflife#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "dirty-chai": "^1.2.2",
+    "eslint": "^2.10.2",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1",
+    "mocha": "^2.4.5",
+    "nodemon": "^1.9.2"
+  }
+}
