@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "babel-node src/app.js",
-    "test": "mocha --compilers js:babel-core/register --watch "
+    "test": "mocha --compilers js:babel-core/register --watch",
+    "lint": "eslint --cache src/**/*.js"
   },
   "repository": {
     "type": "git",
